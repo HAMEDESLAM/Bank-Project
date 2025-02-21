@@ -1,0 +1,89 @@
+
+/* Landing */
+.landing {
+    background-image: url(../../Media/Landing.jpg);
+    height: calc(100vh - 66px);
+}
+.landing *{
+    z-index: 10;
+}
+.landing::before{
+    z-index: 0;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.861);
+}
+
+/* landing end */
+
+/* carsoul */
+.slider{
+    background-color: #051b35;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.carousel {
+    width: 90%;
+    height: 800px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.carousel img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.carousel *{
+    border-radius: 15px;
+}
+.carousel-item::before{
+    content: "";
+    position: absolute;
+    background-color: #000000a5;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 150%;
+}
+.carousel-item-content{
+    z-index: 100;
+    top: 0%;
+    right: 0%;
+    width: 40%;
+    height: 101%;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left: 20px;
+    background-color: #051b35eb;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    z-index: 0;
+
+}
+/* carsoul end */
+
+/* api section */
+.api-section {
+    padding: 50px 0;
+    background-color: #cacaca;
+    text-align: center;
+}
+.invoice-section {
+    background-color: #000;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+#posts-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+    grid-gap: 40px;
+}

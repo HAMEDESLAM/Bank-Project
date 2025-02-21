@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    direction: rtl;
+}
+ul{
+    list-style: none;
+}
+
+/* Navbar */
+.navbar {
+    top:0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px #ddd;
+    background-color: rgb(255, 255, 255); 
+    padding: 10px;
+}
+.navbar .icon {
+    font-size: 40px;
+    transition: transform 0.3s ease;
+}
+.navbar .icon:hover {
+    transform: scale(1.1);
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: none !important;
+    padding: 10px;
+}
+
+.navbar-brand{
+margin-left: auto;
+}
+.navbar-nav {
+display: flex;
+justify-content: flex-end;  
+margin-right: 600px;  
+}
+
+.navbar-nav .nav-item .nav-link {
+transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+color: #007bff; 
+border-radius: 4px;
+text-decoration: underline; 
+}
+
+.button{
+width: 150px;
+}
+.navbar .floating-navbar{
+    background-color: #11253d !important;
+    width: 80vw;
+    bottom: -600PX;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: -1000;
+    transition: 0.7s;
+}
+.navbar .floating-navbar *{
+    color: white;
+}
+.navbar li:hover + .floating-navbar , .navbar .floating-navbar:hover {
+    bottom: -550px;
+    opacity: 1;
+    z-index: 1000;
+}
+/* Navbar end */
+
+
+
+
+/* footer */
+footer {
+    background-color:#0d1927;
+    color: #fff;
+}
+footer i{
+    font-size: 25px;
+}
+footer li, footer a{
+    transition: 0.3s;
+}
+footer li:hover,footer li:hover a{
+    color: #e1ab6d !important;
+}

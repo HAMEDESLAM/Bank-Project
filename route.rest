@@ -1,0 +1,14 @@
+# POST http://localhost:3000/user
+# Content-Type: application/json
+
+# {
+#     "name": "Hamed",
+#     "birthDate":"2018-01-10",
+#     "nationalId":"11111111111111",
+#     "address":"Welcome to hell",
+#     "phoneNumber":"01113866567",
+#     "email":"hamodyx019@gmail.com",
+#     "password":"HamedEslam742007"
+# }
+
+GET http://localhost:3000/    

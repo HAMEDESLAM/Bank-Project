@@ -1,0 +1,48 @@
+.cards-container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap:40px
+}
+.cards-container .card{
+    color: white;
+    background-color: #162c45;
+    box-shadow: 0 0 10px #000000;
+    transition: all .5s;
+}
+.cards-container .card .card-body{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    width: 100%;
+}
+.cards-container .card:hover{
+    transform: scale(1.05) ;
+}
+
+.cards-container .card .calc-container{
+    display: none;
+}
+.cards-container .card-text{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.calc-container h2{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.cards-container .card-text div{
+    background-color: #244d7c;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+#header{
+    text-align: center;
+    width: 100%;
+    font-size: 70px ;
+}

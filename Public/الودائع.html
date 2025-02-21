@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="css/Styles/Global.css" />
+    <link rel="stylesheet" href="css/Styles/box.css" />
+  </head>
+  <body>
+    <!-- Navbar start-->
+    <nav class="navbar navbar-expand-lg position-relative">
+      <div class="container-fluid px-5">
+        <div class="d-flex align-items-center">
+          <i class="fa-solid fa-building-columns icon"></i>
+          <a class="navbar-brand" href="index.html">نظام البنك</a>
+        </div>
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="الودائع.html">الودائع</a>
+          </li>
+          <li class="nav-item" id="Auth">
+            <a class="nav-link" href="account.html">حسابي</a>
+          </li>
+          <div class="d-flex" id="noAuth">
+            <li class="nav-item">
+              <a class="nav-link" href="Signup.html">فتح حساب</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Signin.html">تسجيل الدخول</a>
+            </li>
+          </div>
+          <li class="nav-item position-relative">
+            <button class="btn btn-outline-primary button">التواصل معنا</button>
+          </li>
+          <div
+            class="floating-navbar position-absolute bg-light d-flex justify-content-between align-items-center"
+          >
+            <ul class="col-5 d-flex flex-column h-100">
+              <li class="mb-4">
+                <i class="fa-solid fa-phone ms-2"></i>
+                <a href="tel:+20 01100000000" class="text-decoration-none"
+                  >+20 01100000000</a
+                >
+              </li>
+              <li class="mb-4">
+                <i class="fa-solid fa-phone ms-2"></i>
+                <a href="tel:+20 01200000000" class="text-decoration-none"
+                  >+20 01200000000</a
+                >
+              </li>
+              <li class="mb-4">
+                <i class="fa-brands fa-whatsapp ms-2"></i>
+                <a href="tel:+20 01234435345" class="text-decoration-none"
+                  >+20 01234435345</a
+                >
+              </li>
+              <li class="mb-4">
+                <i class="fa-solid fa-location-dot ms-2"></i>
+                <a href="" class="text-decoration-none">المنطقة الشرقية</a>
+              </li>
+              <li class="mb-4">
+                <i class="fa-solid fa-envelope ms-2"></i>
+                <a href="mailto:Hi@gmail.com" class="text-decoration-none"
+                  >Hi@gmail.com</a
+                >
+              </li>
+            </ul>
+            <div class="col-3">
+              <img class="w-100" src="Media/Logo.png" alt="Banking Image" />
+            </div>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar ends-->
+
+    <!--main-->
+    <section>
+      <div class="container py-5">
+        <!--شعار-->
+        <div class="row d-flex align-items-center">
+          <h2 class="col-9 fw-bold" id="header">الودائع</h2>
+        </div>
+        <!--Content-->
+        <div class="container">
+          <div class="cards-container">
+            <div class="d-flex justify-content-between align-items-center gap-2 flex-column">
+                <h2>بنك مصر </h2>
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">
+                          يقدم بنك مصر مجموعة متنوعة من الودائع لأجل بالعملة المحلية (الجنيه المصري) والعملات الأجنبية، بمدد استحقاق مختلفة تبدأ من 7 أيام وتصل إلى 7 سنوات للودائع بالعملة المحلية، وسنة واحدة للودائع بالعملات الأجنبية. <br>
+
+                        </h5>
+                        <div class="card-text">
+                            <div>
+                              مزايا الودائع في بنك مصر:
+                              <br>
+                              معدل عائد ثابت: يتم تحديده عند ربط الوديعة، ويصرف في نهاية المدة أو شهريًا، حسب نوع الوديعة.
+                              <br>
+                              إمكانية الاسترداد المبكر: يمكن استرداد الوديعة قبل نهاية مدتها وفقًا لقواعد الاسترداد المطبقة.
+                              <br>
+                              تجديد تلقائي: إمكانية تجديد الوديعة لمدد أخرى تلقائيًا.
+                              <br>
+                              الاقتراض بضمان الوديعة: يمكن الاقتراض بضمان الوديعة وفقًا للقواعد التي يقرها البنك.
+                              <br>
+
+                            </div>
+                            <div>
+                              ودائع فليكس مدة 6 شهور: <br>
+                              <br>
+                              معدل عائد ثابت طوال مدة الوديعة، يُصرف في نهاية المدة.
+                              <br>
+                              الحد الأدنى لربط الوديعة: 50,000 جنيه مصري.
+                              <br>
+                              يمكن استرداد الوديعة قبل نهاية مدتها وفقًا لقواعد الاسترداد المطبقة<br>
+                                إمكانية إضافة العائد إلى المبلغ الأساسي أو إضافته إلى حساب منفصل.<br>
+                                إمكانية تجديد الوديعة لمدد أخرى تلقائيًا. <br>
+                            </div>
+                            <div>
+                              ودائع فليكس مدة 9 شهور: <br>
+                              <br>
+                              معدل عائد ثابت طوال مدة الوديعة، يُصرف شهريًا.
+                              <br>
+                              الحد الأدنى لربط الوديعة: 50,000 جنيه مصري.
+                              <br>
+                              يمكن استرداد الوديعة قبل نهاية مدتها وفقًا لقواعد الاسترداد المطبقة<br>
+                                إمكانية إضافة العائد إلى المبلغ الأساسي أو إضافته إلى حساب منفصل.<br>
+                                إمكانية تجديد الوديعة لمدد أخرى تلقائيًا. <br>
+
+                                <br>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center gap-2 flex-column">
+                <h2>بنك ال HSBC </h2>
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">يقدم بنك HSBC مصر مجموعة متنوعة من الودائع والشهادات الادخارية بالعملة المحلية (الجنيه المصري) والعملات الأجنبية، بمدد استحقاق مختلفة لتلبية احتياجات عملائه.
+                            <br>
+                            أنواع الودائع:
+                        </h5>
+                        <div class="card-text">
+                            <div>
+                                الودائع لأجل :<br>
+                                الحد الأدنى لمبلغ الوديعة: 10,000 جنيه مصري أو 2,000 دولار أمريكي أو ما يعادله بعملة أجنبية أخرى.<br>
+                                مدة الوديعة: من أسبوع واحد حتى 36 شهرًا.<br>
+                                معدل العائد: ثابت طوال مدة الوديعة.<br>
+                                مدة الوديعة: من أسبوع واحد حتى 36 شهرًا.<br>
+                                معدل العائد: يختلف حسب مدة الوديعة ونوع العميل. 
+
+                                <br>
+                            </div>
+                            <div>
+                                المميزات :<br>
+                                إمكانية تجديد الوديعة تلقائيًا.<br>
+                                مدة الوديعة: من أسبوع واحد حتى 36 شهرًا.<br>
+                                إمكانية الحصول على تمويل أو بطاقة ائتمان أو سحب على المكشوف بضمان الوديعة..<br>
+                                إمكانية إضافة العائد إلى المبلغ الأساسي أو إضافته إلى حساب منفصل.<br>
+
+                                <br>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center gap-2 flex-column">
+                <h2>بنك ال CIB</h2>
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">
+                            يقدم البنك التجاري الدولي (CIB) مجموعة متنوعة من الودائع لأجل بالعملة المحلية (الجنيه المصري) والعملات الأجنبية، بمدد استحقاق مختلفة لتلبية احتياجات عملائه
+                            <br>
+                            أنواع الودائع:
+                        </h5>
+                        <div class="card-text">
+                            <div>
+                                الودائع لأجل بالجنيه المصري:<br>
+                                مدة الوديعة: تتراوح من أسبوع واحد حتى سنتين.<br>
+                                الحد الأدنى للربط: 5,000 جنيه مصري.
+                                <br>
+                                معدل العائد: يختلف حسب مدة الوديعة ونوع العميل. 
+
+                                <br>
+                            </div>
+                            <div>
+                            الودائع الأسبوعية: <br>
+                            عملاء Prime: عائد 8.5%. <br>
+                            عملاء Plus: عائد 9%.<br>
+                            عملاء Wealth: عائد 11%.<br>
+                            عملاء Exclusive Wealth: عائد 11.5%.<br>
+                            عملاء Private: عائد 12.5%.<br>
+                            </div>
+                            <div>
+                                الودائع لمدة شهر وشهرين: <br>
+                                عملاء Prime: عائد 9.75%.<br>
+                                عملاء Plus: عائد 11.5%.<br>
+                                عملاء Wealth: عائد 13%.<br>
+                                عملاء Exclusive Wealth: عائد 13.5%. <br>
+                                عملاء Private: عائد 14%<br>
+                            </div>
+                            <div>
+                                الودائع لمدة 3 شهور: <br>
+                                عملاء Prime: عائد 11%.<br>
+                                عملاء Plus: عائد 12.5%.<br>
+                                عملاء Wealth: عائد 14%.<br>
+                                عملاء Exclusive Wealth: عائد 14.5%. <br>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center gap-2 flex-column">
+                <h2>بنك ال AUB</h2>
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">                     
+                            يُقدّم البنك الأهلي المتحد (AUB) في مصر مجموعة متنوعة من الودائع لأجل بالعملة المحلية (الجنيه المصري) والعملات الأجنبية، بمدد استحقاق مختلفة لتلبية احتياجات عملائه.
+                            أنواع الودائع: 
+                        </h5>
+                        <div class="card-text">
+                            <div>
+                            الودائع لأجل بالجنيه المصري:<br>
+                                الحد الأدنى لمبلغ الوديعة: 1,000 جنيه مصري. <br>
+                                 مدة الوديعة: تتراوح من أسبوع واحد حتى عام.<br>
+                                 معدل العائد: يختلف حسب مدة الوديعة ونوع العميل. <br>
+                            </div>
+                            <div>
+                            الودائع الأسبوعية: <br>
+                                عملاء Prime: عائد 6.50%.<br>
+                                عملاء Plus: عائد 7.00%.<br>
+                                شركات صغيرة الحجم: عائد 9.00%.<br>
+                            </div>
+                            <div>   
+                            الودائع لمدة شهر وشهرين:<br>
+                                عملاء Prime: عائد 7.75%.<br>
+                                عملاء Plus: عائد 9.50%.<br>
+                                شركات صغيرة الحجم: عائد 11.00%.<br>
+                            </div>
+                            <div>
+                            الودائع لمدة ثلاثة أشهر: <br>
+                                 عملاء Prime: عائد 9.00%.<br>
+                                 عملاء Plus: عائد 10.50%.<br>
+                                 شركات صغيرة الحجم: عائد 12.00%.<br>
+                            </div>
+                            <div>
+                            الودائع لمدة ستة أشهر (يصرف العائد عند الاستحقاق): <br>
+                                 عملاء Prime: عائد 12.00%.<br>
+                                 عملاء Plus: عائد 13.25%.<br>
+                                 شركات صغيرة الحجم: عائد 14.75%.<br>
+                            </div>
+                            <div>
+                            الودائع السنوية (عائد شهري): <br>
+                            عملاء Prime: عائد 12.75%. <br> 
+                            عملاء Plus: عائد 13.25%.<br>
+                            شركات صغيرة الحجم: عائد 14.75%.<br>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center gap-2 flex-column">
+                <h2>بنك ال QIB</h2>
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">
+                            يُقدّم بنك قطر الدولي الإسلامي (QIIB) مجموعة من الودائع لأجل بالعملات المختلفة، بما في ذلك الريال القطري، اليورو، الجنيه الاسترليني، والدولار الأمريكي.
+                        </h5>
+                        <div class="card-text">
+                            <div>
+                            الودائع لأجل :<br>
+                            الحد الأدنى للإيداع: 20,000 ريال قطري.<br>
+                            مدة الاستثمار: شهر، ثلاثة أشهر، ستة أشهر، سنة، ثلاثة سنوات، أو خمس سنوات.<br>
+                                 معدل العائد: يختلف حسب مدة الوديعة ونوع العميل. <br>
+                            </div>
+                            <div>
+                                المميزات: <br>
+                                عوائد مطابقة للشريعة الإسلامية<br>
+                                توزيع العوائد بشكل ربع سنوي.<br>
+                                تجديد تلقائي للوديعة بمدة مماثلة ما لم يُوجه خلاف ذلك.<br>
+                                إمكانية الحصول على قرض أو بطاقة ائتمان بضمان الوديعة. <br>
+                                لا توجد رسوم لربط الوديعة، وتبقى قابلة للكسر أو التعديل.<br>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+      </div>
+    </section>
+    <!--main ends-->
+
+    <!-- footer -->
+    <footer>
+      <div class="container py-5">
+        <div class="row justify-content-between d-flex">
+          <div class="col-8 d-flex justify-content-between flex-wrap">
+            <h3 class="col-12 mb-4">البنوك</h3>
+            <ul class="col-5">
+              <li class="mb-4">
+                <i class="fa-solid fa-building-columns ms-2"></i>
+                <a
+                  href="bank al Ahly.html"
+                  class="text-decoration-none text-white"
+                  >البنك الأهلي المصري</a
+                >
+              </li>
+              <li class="mb-4">
+                <i class="fa-solid fa-building-columns ms-2"></i>
+                <a href="Misr Bank.html" class="text-decoration-none text-white"
+                  >بنك مصر</a
+                >
+              </li>
+
+              <li class="mb-4">
+                <i class="fa-solid fa-building-columns ms-2"></i>
+                <a href="" class="text-decoration-none text-white"
+                  >بنك العربي الأفريقي</a
+                >
+              </li>
+              <li class="mb-4">
+                <i class="fa-solid fa-building-columns ms-2"></i>
+                <a href="" class="text-decoration-none text-white"
+                  >بنك الأهلي المتحد </a
+                >
+              </li>
+
+            </ul>
+            <ul class="col-5">
+              <li class="mb-4">
+                <i class="fa-solid fa-building-columns ms-2"></i>
+                <a href="CIB Bank.html" class="text-decoration-none text-white">
+                  بنك سي اي بي</a
+                >
+              </li>
+              <li class="mb-4">
+                <i class="fa-solid fa-building-columns ms-2"></i>
+                <a href="" class="text-decoration-none text-white">
+                  بنك ايش اي اس</a
+                >
+              </li>
+              <li class="mb-4">
+                <i class="fa-solid fa-building-columns ms-2"></i>
+                <a href="" class="text-decoration-none text-white">
+                  بنك التجاري الدوي</a
+                >
+              </li>
+              <li class="mb-4">
+                <i class="fa-solid fa-building-columns ms-2"></i>
+                <a href="" class="text-decoration-none text-white">
+                  بنك قطر الوطني</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <img class="w-100" src="Media/Logo.png" alt="Banking Image" />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="d-flex justify-content-center align-items-center pb-3">
+        <span class="mx-auto">&copy; 2025 حقوق النشر و الطبع محفوظه</span>
+      </div>
+    </footer>
+    <!--footer end-->
+
+    <!--Scripts-->
+    <script src="js/Scripts/global.js"></script>
+  </body>
+</html>
