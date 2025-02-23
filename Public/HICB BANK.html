@@ -12,12 +12,12 @@
   <body>
     <!-- Navbar start-->
     <nav class="navbar navbar-expand-lg position-relative">
-      <div class="container-fluid px-5">
+      <div class="container-fluid px-1 px-lg-5 d-flex justify-content-between flex-column flex-md-row">
         <div class="d-flex align-items-center">
           <i class="fa-solid fa-building-columns icon"></i>
-          <a class="navbar-brand" href="index.html">نظام البنك</a>
+          <a class="navbar-brand" href="index.html">استشارات لخدمات بنكيه</a>
         </div>
-        <ul class="navbar-nav align-items-center">
+        <ul class="navbar-nav align-items-center flex-row pt-1 pt-lg-0 pe-0">
           <li class="nav-item">
             <a class="nav-link" href="index.html">الرئيسية</a>
           </li>
@@ -27,21 +27,13 @@
           <li class="nav-item" id="Auth">
             <a class="nav-link" href="account.html">حسابي</a>
           </li>
-          <div class="d-flex" id="noAuth">
-            <li class="nav-item">
-              <a class="nav-link" href="Signup.html">فتح حساب</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Signin.html">تسجيل الدخول</a>
-            </li>
-          </div>
           <li class="nav-item position-relative">
             <button class="btn btn-outline-primary button">التواصل معنا</button>
           </li>
           <div
-            class="floating-navbar position-absolute bg-light d-flex justify-content-between align-items-center"
+            class="floating-navbar position-absolute bg-light d-flex justify-content-between align-items-center p-3 p-md-4"
           >
-            <ul class="col-5 d-flex flex-column h-100">
+            <ul class="col-12 col-md-5 d-flex flex-column h-100">
               <li class="mb-4">
                 <i class="fa-solid fa-phone ms-2"></i>
                 <a href="tel:+20 01100000000" class="text-decoration-none"
@@ -61,17 +53,17 @@
                 >
               </li>
               <li class="mb-4">
-                <i class="fa-solid fa-location-dot ms-2"></i>
-                <a href="" class="text-decoration-none">المنطقة الشرقية</a>
-              </li>
-              <li class="mb-4">
                 <i class="fa-solid fa-envelope ms-2"></i>
                 <a href="mailto:Hi@gmail.com" class="text-decoration-none"
                   >Hi@gmail.com</a
                 >
               </li>
+              <li >
+                <i class="fa-solid fa-location-dot ms-2"></i>
+                <a href="" class="text-decoration-none">المنطقة الشرقية</a>
+              </li>
             </ul>
-            <div class="col-3">
+            <div class="col-3 d-none d-md-block">
               <img class="w-100" src="Media/Logo.png" alt="Banking Image" />
             </div>
           </div>
@@ -85,26 +77,30 @@
       <div class="container py-5">
         <!--شعار-->
         <div class="row d-flex align-items-center">
-          <div class="col-2">
-            <img src="Media/CIB Logo.png" alt="" class="w-100" />
+          <div class="col-4">
+            <img src="Media/hsbc-logo.svg" alt="" class="w-100" />
           </div>
-          <h2 class="col-9 fs-1 fw-bold">بنك سي اي بي</h2>
+          <h2 class="col-8 fs-1 fw-bold">بنك HSBC</h2>
         </div>
         <!--Content-->
         <div class="row pt-5 px-5">
           <h2>عن البنك</h2>
           <p class="mt-4 px-5" style="color: rgb(74, 70, 70)">
-            البنك التِجاري الدولي (CIB) هو أكبر بنك قطاع خاص في مِصر، حيث يقوم
-            بتقديم مجموعة واسعة ومُتميزة من المُنتجات والخدمات البنكية لعُملائه،
-            ويتضمن ذلك أكثر من 500 شركة من كُبرى المؤسسات والشركات التي تعمل في
-            مِصر بمُختلف أنواعها. وبفضل علامته التِجارية الرائدة، نجح البنك
-            التِجاري الدولي في تقديم أفضل الحلول المالية لعُملائه من الأفراد
-            والشركات الصغيرة والمُتوسطة، وهو ما مَكّنه من جذب المزيد من العُملاء
-            الجُدُد، ليُحافِظ بذلك على مركزه كأكثر البنوك التِجارية تحقيقًا
-            للأرباح في مصر لأكثر من 40 عامًا.
+            سواء كنت عميلاً جديدًا لدى بنك HSBC أو تتطلع إلى ترقية حسابك الحالي،
+            هناك 3 طرق بسيطة لتصبح مؤهلاً لكل المزايا التي يقدمها حساب HSBC
+            Premier: تحويل‏‎ ‎‏صافى مرتب شهري ثابت شخصى يبلغ 45,000 جنيه مصري
+            على الأقل (أو ما يعادلة من عملات أجنبية أخرى) أو تحويل صافى مرتب
+            شهري ثابت يبلغ 35,000 جنيه مصري و إجمالي صافي دخل سنوي قدره 540,000
+            جنيه مصرى كحد أدنى (أو ما يعادلهم من عملات أجنبية أخرى) الحفاظ على
+            رصيد إجمالي ‎‏‎‏‎‏(TRB) معنا‏‎‏‎‏‎ يبلغ 2,000,000 جنيه مصري أو أكثر
+            (أو ما يعادلة من عملات أجنبية أخرى).8 مؤهل و لديك بالفعل حساب HSBC
+            Premier في دولة أو منطقة أخرى. يرجى‏‎ ‎‏مراجعة كل معايير‏‎
+            ‎‏الأهلية‏‎ ‎‏الخاصة بنا للحصول على مزيد من التفاصيل حول كيف يمكن أن
+            تصبح مؤهلا لHSBC Premier.
+
             <br />
             <br />
-            تأسس البنك التجاري الدولي (CIB) عام 1975 تحت اسم بنك تشيس الأهلي
+            تأسس البنك التجاري الدولي (HSBC) عام 1975 تحت اسم بنك تشيس الأهلي
             المصري، وذلك بملكية مُشتَرَكة بين كل من بنك (تشيس مانهاتن) والبنك
             الأهلي المصري. وفي عام 1987، قَرَر بنك (تشيس مانهاتن) بيع حصته من
             الأسهم للبنك الأهلي المصري الذي قام بتغير اسم البنك إلى البنك
@@ -121,16 +117,12 @@
             9.09%.
             <br />
             <br />
-
-            وقد أثّر وجود شركة ( أكتيس) كالمُساهِم الرئيسي بالبنك التِجاري
-            الدولي على العلاقات الاستراتيجية للبنك، ففي مارس 2014، قامت شركة (
-            أكتيس) ببيع جُزء من حصتها في البنك بَلَغَت 2.6% من خلال البورصة
-            المصرية مع احتفاظها بمقعد في مجلِس الإدارة. وفى مايو من نفس العام
-            قامت شركة (أكتيس) ببيع حصتها المُتَبقية إلي شركة (فيرفاكس القابضة
-            للخدمات المالية). تمتلك Fairfax Financial Holdings من خلال شركاتها
-            التابعة المملوكة بالكامل ما مجموعه 6.55٪ من أسهم CIB. في أبريل 2022،
-            استحوذت شركة ألفا أوريكس ليميتد على 18.595٪ من اسهم البنك التجاري
-            الدولي
+            قم بزيارتنا: فريقنا على استعداد لمناقشة احتياجاتك المالية والتوصية
+            بأفضل الحلول. الإنترنت البنكي: قم بإجراء معظم معاملاتك اليومية من
+            خلال خدمة الإنترنت البنكي وتطبيق الهواتف المحمولة. الرسائل الآمنة:
+            قم بتسجيل الدخول وإرسال رسائل آمنة للاستفسارات أو تقديم طلبات. إتصل
+            بنا: مركز الإتصال الخاص بنا متوفرعلى مدار الساعة طوال أيام الأسبوع
+            للإجابة على أسئلتك والمساعدة في تلبية احتياجاتك.
           </p>
         </div>
         <div class="row pt-5 px-5">
@@ -204,9 +196,11 @@
     <footer>
       <div class="container py-5">
         <div class="row justify-content-between d-flex">
-          <div class="col-8 d-flex justify-content-between flex-wrap">
-            <h3 class="col-12 mb-4">البنوك</h3>
-            <ul class="col-5">
+          <div
+            class="col-12 col-lg-8 d-flex flex-column flex-sm-row justify-content-between flex-wrap"
+          >
+            <h3 class="col-12 mb-4 me-3 me-sm-0">البنوك</h3>
+            <ul class="col-10 col-sm-5 p-0 mb-0 me-5">
               <li class="mb-4">
                 <i class="fa-solid fa-building-columns ms-2"></i>
                 <a
@@ -224,19 +218,18 @@
 
               <li class="mb-4">
                 <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="" class="text-decoration-none text-white"
+                <a href="Al Araby Al Afriky.Html" class="text-decoration-none text-white"
                   >بنك العربي الأفريقي</a
                 >
               </li>
               <li class="mb-4">
                 <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="" class="text-decoration-none text-white"
-                  >بنك الأهلي المتحد </a
-                >
+                <a href="Saudi Bank.html" class="text-decoration-none text-white"
+                  >بنك السعودي المصري
+                </a>
               </li>
-
             </ul>
-            <ul class="col-5">
+            <ul class="col-10 col-sm-5 p-0 mb-0 me-5">
               <li class="mb-4">
                 <i class="fa-solid fa-building-columns ms-2"></i>
                 <a href="CIB Bank.html" class="text-decoration-none text-white">
@@ -245,25 +238,25 @@
               </li>
               <li class="mb-4">
                 <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="" class="text-decoration-none text-white">
+                <a href="HICB BANK.html" class="text-decoration-none text-white">
                   بنك ايش اي اس</a
                 >
               </li>
               <li class="mb-4">
                 <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="" class="text-decoration-none text-white">
-                  بنك التجاري الدوي</a
+                <a href="QNB.html" class="text-decoration-none text-white">
+                  بنك قطر الوطني</a
                 >
               </li>
               <li class="mb-4">
                 <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="" class="text-decoration-none text-white">
-                  بنك قطر الوطني</a
+                <a href="Cairo Bank.html" class="text-decoration-none text-white">
+                  بنك القاهره</a
                 >
               </li>
             </ul>
           </div>
-          <div class="col-4">
+          <div class="d-none d-lg-block col-md-4">
             <img class="w-100" src="Media/Logo.png" alt="Banking Image" />
           </div>
         </div>
@@ -274,7 +267,6 @@
       </div>
     </footer>
     <!--footer end-->
-
 
     <!--Scripts-->
     <script src="js/Scripts/global.js"></script>

@@ -13,12 +13,12 @@
   <body>
     <!-- Navbar start-->
     <nav class="navbar navbar-expand-lg position-relative">
-      <div class="container-fluid px-5">
+      <div class="container-fluid px-1 px-lg-5 d-flex justify-content-between flex-column flex-md-row">
         <div class="d-flex align-items-center">
           <i class="fa-solid fa-building-columns icon"></i>
-          <a class="navbar-brand" href="index.html">نظام البنك</a>
+          <a class="navbar-brand" href="index.html">استشارات لخدمات بنكيه</a>
         </div>
-        <ul class="navbar-nav align-items-center">
+        <ul class="navbar-nav align-items-center flex-row pt-1 pt-lg-0 pe-0">
           <li class="nav-item">
             <a class="nav-link" href="index.html">الرئيسية</a>
           </li>
@@ -28,21 +28,13 @@
           <li class="nav-item" id="Auth">
             <a class="nav-link" href="account.html">حسابي</a>
           </li>
-          <div class="d-flex" id="noAuth">
-            <li class="nav-item">
-              <a class="nav-link" href="Signup.html">فتح حساب</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Signin.html">تسجيل الدخول</a>
-            </li>
-          </div>
           <li class="nav-item position-relative">
             <button class="btn btn-outline-primary button">التواصل معنا</button>
           </li>
           <div
-            class="floating-navbar position-absolute bg-light d-flex justify-content-between align-items-center"
+            class="floating-navbar position-absolute bg-light d-flex justify-content-between align-items-center p-3 p-md-4"
           >
-            <ul class="col-5 d-flex flex-column h-100">
+            <ul class="col-12 col-md-5 d-flex flex-column h-100">
               <li class="mb-4">
                 <i class="fa-solid fa-phone ms-2"></i>
                 <a href="tel:+20 01100000000" class="text-decoration-none"
@@ -62,17 +54,17 @@
                 >
               </li>
               <li class="mb-4">
-                <i class="fa-solid fa-location-dot ms-2"></i>
-                <a href="" class="text-decoration-none">المنطقة الشرقية</a>
-              </li>
-              <li class="mb-4">
                 <i class="fa-solid fa-envelope ms-2"></i>
                 <a href="mailto:Hi@gmail.com" class="text-decoration-none"
                   >Hi@gmail.com</a
                 >
               </li>
+              <li >
+                <i class="fa-solid fa-location-dot ms-2"></i>
+                <a href="" class="text-decoration-none">المنطقة الشرقية</a>
+              </li>
             </ul>
-            <div class="col-3">
+            <div class="col-3 d-none d-md-block">
               <img class="w-100" src="Media/Logo.png" alt="Banking Image" />
             </div>
           </div>
@@ -92,15 +84,14 @@
         <div class="container">
           <div class="cards-container">
             <div class="d-flex justify-content-between align-items-center gap-2 flex-column">
-                <h2>بنك مصر </h2>
-                <div class="card w-100">
-                    <div class="card-body">
-                        <h5 class="card-title mb-4">
-                          يقدم بنك مصر مجموعة متنوعة من الودائع لأجل بالعملة المحلية (الجنيه المصري) والعملات الأجنبية، بمدد استحقاق مختلفة تبدأ من 7 أيام وتصل إلى 7 سنوات للودائع بالعملة المحلية، وسنة واحدة للودائع بالعملات الأجنبية. <br>
-
-                        </h5>
-                        <div class="card-text">
-                            <div>
+              <h2>بنك مصر</h2>
+              <div class="card w-100">
+                  <div class="card-body">
+                      <h5 class="card-title mb-4">
+                          يقدم بنك مصر مجموعة متنوعة من الودائع لأجل بالعملة المحلية (الجنيه المصري) والعملات الأجنبية، بمدد استحقاق مختلفة تبدأ من 7 أيام وتصل إلى 7 سنوات للودائع بالعملة المحلية، وسنة واحدة للودائع بالعملات الأجنبية.
+                      </h5>
+                      <div class="card-text">
+                          <div>
                               مزايا الودائع في بنك مصر:
                               <br>
                               معدل عائد ثابت: يتم تحديده عند ربط الوديعة، ويصرف في نهاية المدة أو شهريًا، حسب نوع الوديعة.
@@ -111,35 +102,127 @@
                               <br>
                               الاقتراض بضمان الوديعة: يمكن الاقتراض بضمان الوديعة وفقًا للقواعد التي يقرها البنك.
                               <br>
-
-                            </div>
-                            <div>
-                              ودائع فليكس مدة 6 شهور: <br>
+                          </div>
+                          <div>
+                              أنواع الودائع:
+                              <br>
+                              ودائع فليكس:
+                              <br>
+                              <br>
+                              مدة 6 أشهر:
                               <br>
                               معدل عائد ثابت طوال مدة الوديعة، يُصرف في نهاية المدة.
                               <br>
                               الحد الأدنى لربط الوديعة: 50,000 جنيه مصري.
                               <br>
-                              يمكن استرداد الوديعة قبل نهاية مدتها وفقًا لقواعد الاسترداد المطبقة<br>
-                                إمكانية إضافة العائد إلى المبلغ الأساسي أو إضافته إلى حساب منفصل.<br>
-                                إمكانية تجديد الوديعة لمدد أخرى تلقائيًا. <br>
-                            </div>
-                            <div>
-                              ودائع فليكس مدة 9 شهور: <br>
+                              يمكن استرداد الوديعة قبل نهاية مدتها وفقًا لقواعد الاسترداد المطبقة.
+                              <br>
+                              إمكانية تجديد الوديعة لمدد أخرى تلقائيًا.
+                              <br>
+                              يمكن الاقتراض بضمان الوديعة وفقًا للقواعد التي يقرها البنك.
+                              <br>
+                          </div>
+                          <div>
+                              مدة 9 أشهر:
                               <br>
                               معدل عائد ثابت طوال مدة الوديعة، يُصرف شهريًا.
                               <br>
                               الحد الأدنى لربط الوديعة: 50,000 جنيه مصري.
                               <br>
-                              يمكن استرداد الوديعة قبل نهاية مدتها وفقًا لقواعد الاسترداد المطبقة<br>
-                                إمكانية إضافة العائد إلى المبلغ الأساسي أو إضافته إلى حساب منفصل.<br>
-                                إمكانية تجديد الوديعة لمدد أخرى تلقائيًا. <br>
-
-                                <br>
-                            </div>
-                        </div>
-                </div>
+                              يمكن استرداد الوديعة قبل نهاية مدتها وفقًا لقواعد الاسترداد المطبقة.
+                              <br>
+                              إمكانية تجديد الوديعة لمدد أخرى تلقائيًا.
+                              <br>
+                              يمكن الاقتراض بضمان الوديعة وفقًا للقواعد التي يقرها البنك.
+                              <br>
+                          </div>
+                          <div>
+                              أسعار العائد على الودائع:
+                              <br>
+                              تختلف أسعار العائد بناءً على مدة الوديعة والمبلغ المودع. على سبيل المثال، الودائع لمدة 6 أشهر تقدم عائدًا يصل إلى 22% سنويًا، بينما الودائع لمدة 9 أشهر تقدم عائدًا يصل إلى 21% سنويًا.
+                              <br>
+                          </div>
+                          <div>
+                              كيفية الاستفسار أو التقديم:
+                              <br>
+                              لمزيد من المعلومات أو للتقدم بطلب لفتح وديعة، يمكنك الاتصال على الرقم 19888 أو زيارة أقرب فرع من فروع بنك مصر المنتشرة في جميع أنحاء الجمهورية.
+                          </div>
+                      </div>
+                  </div>
+              </div>
             </div>
+            <div class="d-flex justify-content-between align-items-center gap-2 flex-column">
+              <h2>البنك الأهلي المصري</h2>
+              <div class="card w-100">
+                  <div class="card-body">
+                      <h5 class="card-title mb-4">
+                          يقدم البنك الأهلي المصري مجموعة متنوعة من الودائع لأجل بالعملة المحلية (الجنيه المصري) والعملات الأجنبية، بمدد استحقاق مختلفة تبدأ من 3 أشهر وتصل إلى 7 سنوات.
+                      </h5>
+                      <div class="card-text">
+                          <div>
+                              أنواع الودائع:
+                              <br>
+                              الودائع بالعملة المحلية (الجنيه المصري):
+                          </div>
+                          <div>
+                              <strong>مدة 3 أشهر حتى أقل من 6 أشهر:</strong>
+                              <br>
+                              - العائد: 12.50% سنويًا، يُصرف في نهاية المدة.
+                              <br>
+                              - هذه الوديعة تتيح للمودعين فرصة الاستثمار قصير الأجل بعائد ثابت.
+                          </div>
+                          <div>
+                              <strong>مدة سنة حتى أقل من سنتين:</strong>
+                              <br>
+                              - العائد: 13% سنويًا، يُصرف في نهاية المدة.
+                              <br>
+                              - خيار جيد لمن يرغبون في الادخار مع تحقيق عوائد أعلى خلال مدة متوسطة.
+                          </div>
+                          <div>
+                              <strong>مدة سنتين حتى أقل من 3 سنوات:</strong>
+                              <br>
+                              - العائد: 12.50% سنويًا، يُصرف في نهاية المدة.
+                              <br>
+                              - توفر استقرارًا ماليًا بعوائد مناسبة لفترة أطول.
+                          </div>
+                          <div>
+                              <strong>مدة 3 سنوات حتى أقل من 4 سنوات:</strong>
+                              <br>
+                              - العائد: 12.50% سنويًا، يُصرف في نهاية المدة.
+                              <br>
+                              - مناسبة لمن يبحث عن ادخار طويل الأجل بعوائد ثابتة.
+                          </div>
+                          <div>
+                              <strong>مدة 4 سنوات حتى أقل من 5 سنوات:</strong>
+                              <br>
+                              - العائد: 12.50% سنويًا، يُصرف في نهاية المدة.
+                              <br>
+                              - توفر الاستقرار المالي للمستثمرين الذين يفضلون خطط الادخار طويلة الأجل.
+                          </div>
+                          <div>
+                              <strong>مدة 5 سنوات حتى أقل من 6 سنوات:</strong>
+                              <br>
+                              - العائد: 12.11% سنويًا، يُصرف في نهاية المدة.
+                              <br>
+                              - خيار مناسب للمستثمرين الباحثين عن أمان مالي على المدى الطويل.
+                          </div>
+                          <div>
+                              <strong>مدة 6 سنوات حتى أقل من 7 سنوات:</strong>
+                              <br>
+                              - العائد: 12.11% سنويًا، يُصرف في نهاية المدة.
+                              <br>
+                              - مناسبة للأفراد الراغبين في تأمين مدخراتهم لفترة ممتدة بعوائد ثابتة.
+                          </div>
+                          <div>
+                              <strong>مدة 7 سنوات فأكثر:</strong>
+                              <br>
+                              - العائد: 12.11% سنويًا، يُصرف في نهاية المدة.
+                              <br>
+                              - توفر هذه الوديعة استثمارًا طويل الأجل بأمان تام وعوائد ثابتة.
+                          </div>
+                      </div>
+                  </div>
+              </div>
             </div>
             <div class="d-flex justify-content-between align-items-center gap-2 flex-column">
                 <h2>بنك ال HSBC </h2>
@@ -304,9 +387,11 @@
     <footer>
       <div class="container py-5">
         <div class="row justify-content-between d-flex">
-          <div class="col-8 d-flex justify-content-between flex-wrap">
-            <h3 class="col-12 mb-4">البنوك</h3>
-            <ul class="col-5">
+          <div
+            class="col-12 col-lg-8 d-flex flex-column flex-sm-row justify-content-between flex-wrap"
+          >
+            <h3 class="col-12 mb-4 me-3 me-sm-0">البنوك</h3>
+            <ul class="col-10 col-sm-5 p-0 mb-0 me-5">
               <li class="mb-4">
                 <i class="fa-solid fa-building-columns ms-2"></i>
                 <a
@@ -324,19 +409,18 @@
 
               <li class="mb-4">
                 <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="" class="text-decoration-none text-white"
+                <a href="Al Araby Al Afriky.Html" class="text-decoration-none text-white"
                   >بنك العربي الأفريقي</a
                 >
               </li>
               <li class="mb-4">
                 <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="" class="text-decoration-none text-white"
-                  >بنك الأهلي المتحد </a
-                >
+                <a href="Saudi Bank.html" class="text-decoration-none text-white"
+                  >بنك السعودي المصري
+                </a>
               </li>
-
             </ul>
-            <ul class="col-5">
+            <ul class="col-10 col-sm-5 p-0 mb-0 me-5">
               <li class="mb-4">
                 <i class="fa-solid fa-building-columns ms-2"></i>
                 <a href="CIB Bank.html" class="text-decoration-none text-white">
@@ -345,25 +429,25 @@
               </li>
               <li class="mb-4">
                 <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="" class="text-decoration-none text-white">
+                <a href="HICB BANK.html" class="text-decoration-none text-white">
                   بنك ايش اي اس</a
                 >
               </li>
               <li class="mb-4">
                 <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="" class="text-decoration-none text-white">
-                  بنك التجاري الدوي</a
+                <a href="QNB.html" class="text-decoration-none text-white">
+                  بنك قطر الوطني</a
                 >
               </li>
               <li class="mb-4">
                 <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="" class="text-decoration-none text-white">
-                  بنك قطر الوطني</a
+                <a href="Cairo Bank.html" class="text-decoration-none text-white">
+                  بنك القاهره</a
                 >
               </li>
             </ul>
           </div>
-          <div class="col-4">
+          <div class="d-none d-lg-block col-md-4">
             <img class="w-100" src="Media/Logo.png" alt="Banking Image" />
           </div>
         </div>

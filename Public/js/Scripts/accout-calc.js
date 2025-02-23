@@ -104,16 +104,16 @@ for (let i = 0; i < LoansData.length; i++) {
 
     let calc = `
         <div class="calc-container">
-            <form class="d-flex justify-content-between align-items-center w-100" id="form-${i}">
-                <div class="col-4 h-100">
+            <form class="d-flex justify-content-between align-items-center w-100  flex-row" id="form-${i}">
+                <div class=" col-4 h-100">
                     <div>
-                        <label for="salary" class="fs-5 mb-2">مرتبك</label> <br>
+                        <label for="salary" class="fs-6 fs-md-5 mb-2">مرتبك</label> <br>
                         <input type="number" min="0" id="salary-${i}" class="input">
                     </div>
                     <br>
                     <div>
-                        <label for="years" class="fs-5 mb-2">عدد السنين</label> <br>
-                        <input type="number" min="0" id="years-${i}" class="input">
+                        <label for="years" class="fs-6 fs-md-5">عدد السنين</label> <br>
+                        <input type="number" min="0" id="years-${i}" class="input fs-6 fs-md-5">
                     </div>
                 </div>
 
@@ -122,13 +122,13 @@ for (let i = 0; i < LoansData.length; i++) {
                 <!-- output -->
                 <div class="col-4 h-100">
                     <div>
-                        <label for="loan" class="fs-5 mb-2">حجم القرض</label> 
+                        <label for="loan" class="fs-6 fs-md-5 mb-2">حجم القرض</label> 
                         <br>
                         <span id="loan-${i}" class="input"></span>
                     </div>
                     <br>
                     <div>
-                        <label for="intrest" class="fs-5 mb-2">الفايده</label> 
+                        <label for="intrest" class="fs-6 fs-md-5 mb-2">الفايده</label> 
                         <br>
                         <span id="intrest-${i}" class="input"></span>
                     </div>
@@ -146,7 +146,7 @@ for (let i = 0; i < LoansData.length; i++) {
                 </div>
                 <div>
                     ${calc}
-                    <a class="btn btn-primary col-4">اعرف اكتر</a>
+                    <a class="btn btn-primary">اعرف اكتر</a>
                 </div>
             </div>
         </div>

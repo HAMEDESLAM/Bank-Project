@@ -74,6 +74,12 @@ document.addEventListener('click',function(e){
     if(e.target.classList.contains('btn') && e.target.parentElement.parentElement.parentElement.classList.contains('card')){
         e.target.parentElement.parentElement.parentElement.classList.toggle('card-show');
         e.target.parentElement.parentElement.parentElement.parentElement.classList.toggle('position-relative');
+        if(e.target.parentElement.parentElement.parentElement.classList.contains("card-show")){
+            e.target.innerText = "الخروج"
+        }
+        else{
+            e.target.innerText = "اعرف اكتر"
+        }
     }
     else if(!document.getElementsByClassName("cards-container")[0].contains(e.target)){
         document.querySelectorAll('.card').forEach(function(card){

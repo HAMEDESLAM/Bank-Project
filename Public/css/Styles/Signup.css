@@ -28,15 +28,19 @@ body{
     padding: 10px;
     border-radius: 5px;
 }
-.form-group label {
-    font-weight: bold;
+
+.form-group{
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+    width: 200%;
 }
 .active {
     display: block;
 }
 .disabled {
     display: none;
-
 }
 form .control{
     width: 40px;

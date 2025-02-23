@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>تسجيل الدخول</title>
-    <link rel="stylesheet" href="css/Styles/Signin.css" />
+    <title>بنك قطر الوطني</title>
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css.map" />
@@ -73,50 +72,78 @@
     </nav>
     <!-- Navbar ends-->
 
-    <!--Login form-->
-    <section class="w-100">
-      <div class="login-container">
-        <h2>تسجيل الدخول</h2>
-        <form>
-          <div class="mb-3">
-            <label for="email" class="form-label">البريد الكتروني</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              name="username"
-              required
-              placeholder="ادخل البريد الالكتروني"
-            />
+    <!--main-->
+    <section>
+      <div class="container py-5">
+        <!--شعار-->
+        <div class="row d-flex align-items-center">
+          <div class="col-2">
+            <img src="Media/QNB.jpg" alt="" class="w-100" />
           </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">كلمة المرور</label>
-            <input
-              type="password"
-              class="form-control"
-              id="password"
-              name="password"
-              required
-              placeholder="أدخل كلمة المرور"
-            />
-          </div>
-          <div class="mb-3" dir="rtl">
-            <input
-              type="checkbox"
-              class="form-check-input ms-2"
-              id="rememberMe"
-            />
-            <label class="form-check-label" for="rememberMe">تذكرني</label>
-          </div>
-          <button type="submit" class="btn btn-primary">تسجيل الدخول</button>
-        </form>
-        <div
-          id="signin-alert"
-          class="alert alert-danger d-none text-center mb-0 mt-2"
-        ></div>
+          <h2 class="col-9 fs-1 fw-bold">بنك قطر الوطني</h2>
+        </div>
+        <!--Content-->
+        <div class="row pt-5 px-5">
+          <h2>عن البنك</h2>
+          <p class="mt-4 px-5" style="color: rgb(74, 70, 70)">
+            بنك قطر الوطني (QNB) هو أكبر مؤسسة مالية في منطقة الشرق الأوسط وشمال أفريقيا، وأحد أكثر البنوك شهرة في العالم. تأسس البنك عام 1964، ويقدم مجموعة واسعة من الخدمات المصرفية والمالية التي تلبي احتياجات الأفراد والشركات على حد سواء. يتمتع البنك بوجود قوي في أكثر من 31 دولة حول العالم، بما في ذلك أوروبا وآسيا وأفريقيا، مما يجعله أحد أكثر البنوك تنوعًا وتوسعًا جغرافيًا.
+
+            <br /><br />
+            يعد بنك قطر الوطني رائدًا في تقديم الحلول المالية المبتكرة، حيث يقدم خدمات مصرفية شاملة تشمل الخدمات المصرفية للأفراد، الخدمات المصرفية للشركات، الخدمات الاستثمارية، والخدمات المصرفية الإسلامية. كما يحرص البنك على تبني أحدث التقنيات الرقمية لتقديم تجربة مصرفية سلسة وآمنة لعملائه.
+
+            <br /><br />
+            يتمتع البنك بسمعة طيبة في الالتزام بأعلى معايير الجودة والشفافية، مما جعله يحصل على العديد من الجوائز والتقديرات الدولية. يعد البنك أيضًا شريكًا استراتيجيًا للعديد من المؤسسات الكبرى والحكومات في تنفيذ المشاريع التنموية والاستثمارية.
+          </p>
+        </div>
+        <div class="row pt-5 px-5">
+          <h2>الأنشطة والخدمات</h2>
+          <p class="mt-4 px-5" style="color: rgb(74, 70, 70)">
+                <h4 class="mt-3">الخدمات المصرفية للأفراد</h4>
+                    يقدم بنك قطر الوطني مجموعة متنوعة من الخدمات المصرفية للأفراد، تشمل:
+                    <ul>
+                        <li>الحسابات الجارية وحسابات التوفير.</li>
+                        <li>القروض الشخصية وقروض السيارات.</li>
+                        <li>بطاقات الائتمان والخصم.</li>
+                        <li>خدمات الصرافة وتحويل الأموال.</li>
+                        <li>الخدمات المصرفية عبر الإنترنت والهاتف المحمول.</li>
+                    </ul>
+
+                <h4 class="mt-3">الخدمات المصرفية للشركات</h4>
+                    يقدم البنك حلولاً مصرفية متكاملة للشركات، تشمل:
+                    <ul>
+                        <li>التمويل التجاري وتمويل المشاريع.</li>
+                        <li>حسابات الأعمال والخدمات الاستشارية.</li>
+                        <li>خدمات التحصيل وإدارة النقد.</li>
+                        <li>الخدمات المصرفية الدولية.</li>
+                    </ul>
+
+                <h4 class="mt-3">الخدمات المصرفية الاستثمارية</h4>
+                    يشمل ذلك:
+                    <ul>
+                        <li>إدارة المحافظ الاستثمارية.</li>
+                        <li>خدمات الوساطة المالية.</li>
+                        <li>الاستشارات المالية والاستثمارية.</li>
+                        <li>إصدار السندات وإدارة الأصول.</li>
+                    </ul>
+
+                <h4 class="mt-3">التمويل العقاري</h4>
+                    يقدم البنك حلول تمويل عقاري مخصصة لشراء أو بناء العقارات السكنية والتجارية، مع مرونة في الشروط وسرعة في الإجراءات.
+
+                <h4 class="mt-3">الخدمات المصرفية الإسلامية</h4>
+                    يقدم البنك مجموعة من الخدمات المصرفية المتوافقة مع الشريعة الإسلامية، تشمل:
+                    <ul>
+                        <li>الحسابات الإسلامية.</li>
+                        <li>التمويل الإسلامي.</li>
+                        <li>الصكوك الإسلامية.</li>
+                    </ul>
+
+                <h4 class="mt-3">الخدمات الرقمية</h4>
+                    يوفر البنك منصة مصرفية رقمية متكاملة تمكن العملاء من إدارة حساباتهم، تحويل الأموال، ودفع الفواتير عبر الإنترنت بسهولة وأمان. كما يقدم البنك تطبيقًا للهاتف المحمول يتيح الوصول إلى الخدمات المصرفية في أي وقت ومن أي مكان.
+          </p>
+        </div>
       </div>
     </section>
-    <!--Login form end-->
+    <!--main ends-->
 
     <!-- footer -->
     <footer>
@@ -194,7 +221,7 @@
     </footer>
     <!--footer end-->
 
-    <script src="js/Scripts/Signin.js"></script>
+    <!--Scripts-->
     <script src="js/Scripts/global.js"></script>
   </body>
 </html>
