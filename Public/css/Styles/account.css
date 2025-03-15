@@ -1,6 +1,3 @@
-body{
-    background-color: #f4f4f4;
-}
 /* profile */
 .profile .profile-container {
     background-color: #fff;
@@ -152,3 +149,8 @@ body{
     border:none;
 }
 /* calc  end*/
+
+.update-alert{
+    display: none;
+    color: #9e342e;
+}

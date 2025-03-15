@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    width: 100vw;
+
     direction: rtl;
 }
 ul{
@@ -16,6 +18,7 @@ ul{
     background-color: rgb(255, 255, 255); 
     padding: 10px;
     width: 100vw !important;
+
 }
 .navbar .container-fluid{
     display: flex;
@@ -41,6 +44,9 @@ margin-left: auto;
 .navbar-nav {
     display: flex;
     justify-content: flex-end; 
+    @media (max-width:776px) {
+        font-size: 14px;
+    }
 }
 .navbar-nav .nav-item .nav-link {
     transition: color 0.3s ease, background-color 0.3s ease;
@@ -53,6 +59,9 @@ margin-left: auto;
 }
 .button{
     width: 150px;
+    @media (max-width:776px) {
+        width: 100px;
+    }
 }
 .navbar .floating-navbar{
     background-color: #11253d !important;
@@ -64,12 +73,12 @@ margin-left: auto;
     opacity: 0;
     z-index: -1000;
     transition: 0.7s;
-
+    font-size: 16px;
 }
 .navbar .floating-navbar *{
     color: white;
 }
-.navbar li:hover + .floating-navbar , .navbar .floating-navbar:hover {
+.navbar li:hover + .floating-navbar , .navbar .floating-navbar:hover, .floating-navbar.floating-navbar-show {
     transform: translate(-50%,calc(100% + 10px));
     opacity: 1;
     z-index: 1000;
@@ -83,12 +92,19 @@ margin-left: auto;
 footer {
     background-color:#0d1927;
     color: #fff;
+    width: 100vw;
+    overflow: hidden;
 }
 footer i{
     font-size: 25px;
 }
+footer h3{
+    font-size: 35px;
+    font-weight: bold;
+}
 footer li, footer a{
     transition: 0.3s;
+    font-size: 20px;
 }
 footer li:hover,footer li:hover a{
     color: #e1ab6d !important;

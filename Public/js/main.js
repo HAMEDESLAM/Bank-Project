@@ -15,10 +15,10 @@ async function fetchData() {
       postDiv.classList.add('card');
       postDiv.innerHTML = `
         <div class="row g-0 h-100">
-          <div class="col-5 h-100">
+          <div class="col-5 d-none d-md-block h-100">
             <img src="${post.image}" class="img-fluid rounded-end h-100 w-100" style="object-fit:cover" alt="Post Image">
           </div>
-          <div class="col-7 h-100">
+          <div class="col-12 col-md-7 h-100">
             <div class="card-body">
               <h5 class="card-title text-truncate" >${post.title}</h5>
               <h6 class="card-subtitle mb-2 text-muted text-truncate" >${post.description}</h6>

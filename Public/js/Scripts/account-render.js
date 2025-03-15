@@ -1,7 +1,7 @@
 // render user data
 async function Render() {
     try {
-        const response = await fetch('/user/profile', {
+        const response = await fetch('user/profile', {
             method: 'GET',
             credentials: 'include'  
         });
@@ -18,9 +18,7 @@ async function Render() {
         document.getElementById("showemail").value = data.user.email;
   
     } catch (error) {
-        console.error('Error fetching data:', error);
-    } finally{
-        console.log("operation has done")
+        window.location.href = "/";
     }
 }
   
@@ -31,25 +29,23 @@ window.onload = Render;
 let updateButton = document.getElementById("update");
 updateButton.onclick = async function() {
     try {
-        let fullname = document.getElementById("showfullname").value 
+        let username = document.getElementById("showfullname").value 
         let phoneNumber = document.getElementById("showphone").value;
         let email = document.getElementById("showemail").value;
-        const response = await fetch('/user/update', {
+        const response = await fetch('user/update', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
             },
             credentials: 'include',
-            body: JSON.stringify({ fullname, phoneNumber, email })
+            body: JSON.stringify({ username , phoneNumber, email })
         });
-        
+        const data = await response.json();
         if (!response.ok) {
             throw new Error(data.message);
         }
-
-        const data = await response.json();
-        document.getElementById("showname").innerText = data.user.fullname.split(" ").slice(0,3).join(" ");
-        document.getElementById("showfullname").value = data.user.fullname;
+        console.log(data)
+        document.getElementById("showemail").value = data.user.email;
         document.getElementById("showphone").value = data.user.phoneNumber;
 
     } catch (error) {
@@ -70,7 +66,7 @@ logout.onclick  = async function(){
 // logout end
 
 // loan
-document.addEventListener('click',function(e){
+document.addEventListener('click',function handleLoansButton(e){
     if(e.target.classList.contains('btn') && e.target.parentElement.parentElement.parentElement.classList.contains('card')){
         e.target.parentElement.parentElement.parentElement.classList.toggle('card-show');
         e.target.parentElement.parentElement.parentElement.parentElement.classList.toggle('position-relative');
@@ -86,6 +82,8 @@ document.addEventListener('click',function(e){
             card.classList.remove('card-show');
             card.parentElement.classList.add('position-relative');
         });
+        Array.from(document.getElementsByClassName("loan-show")).forEach(function(btn){
+            btn.innerText = "اعرف اكتر";
+        })
     }
 })
-

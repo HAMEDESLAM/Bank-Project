@@ -1,12 +1,9 @@
-body{
-    background-color: #f4f4f4 !important;
-}
 /* Login */
 section{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 66px);
+    min-height: calc(100vh - 66px);
 }
 .login-container {
     width: 600px;
@@ -30,4 +27,8 @@ section{
 }
 .login-container .form-check-label {
     font-size: 14px;
+}
+#signin-alert{
+    display: none;
+    color: #9e342e;
 }

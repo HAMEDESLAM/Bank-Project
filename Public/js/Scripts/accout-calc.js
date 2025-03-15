@@ -146,7 +146,7 @@ for (let i = 0; i < LoansData.length; i++) {
                 </div>
                 <div>
                     ${calc}
-                    <a class="btn btn-primary">اعرف اكتر</a>
+                    <a class="btn btn-primary loan-show">اعرف اكتر</a>
                 </div>
             </div>
         </div>

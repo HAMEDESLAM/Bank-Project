@@ -1,0 +1,7 @@
+
+services:
+  php-server:
+    build: .
+    ports:
+      - "8000:8000"  # Map PHP server to localhost
+    restart: always

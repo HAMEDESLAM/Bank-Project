@@ -1,4 +1,3 @@
-
 let formParts = document.getElementsByClassName('form-part');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
@@ -15,17 +14,25 @@ let email = document.getElementById("email");
 let password = document.getElementById("password");
 let confirmPassword = document.getElementById("confirmPassword");
 
+
+phoneNumber.addEventListener("keydown",(e)=>{
+    if(e.key === "Enter"){
+        next.click()  
+    }
+})
+
+// Form sliding
 next.onclick = function() {
     formParts[1].classList.add('active');
     formParts[1].classList.remove('disabled');
     formParts[0].classList.add('disabled');
     formParts[0].classList.remove('active');
     btn.removeAttribute('disabled');
-    
     next.classList.add('disabled');
     next.classList.remove('active'); 
     prev.classList.add('active');
     prev.classList.remove('disabled');
+    email.focus()
 }
 
 prev.onclick = function() {
@@ -40,9 +47,15 @@ prev.onclick = function() {
     next.classList.remove('disabled');
 }
 
-function signUpAlert(message,parent) {
-    console.log(parent.children);
-    let alert = document.getElementById("signup-alert");
+// form validation
+function signUpAlert(message,parent,els) {
+    let alert = parent.querySelector(".signup-alert");
+    if(!alert){
+        alert = document.querySelector("form > #signup-alert").cloneNode();
+        alert.id = ""
+        alert.classList.remove("alert","alert-danger","text-center","mt-3")
+        alert.classList.add("signup-alert")
+    }
     alert.innerHTML = `
     <i class="fa-solid fa-circle-info"></i>
      ${message}
@@ -51,63 +64,89 @@ function signUpAlert(message,parent) {
     if (parent.parentElement.parentElement.firstElementChild === parent.parentElement) {
         prev.click();
     }
-    else {
-        next.click();
-    }
     parent.appendChild(alert);
+
+    els.forEach(element => {
+        element.addEventListener("input", function validateInput() {
+            if (isValidInput(element)) {
+                alert.style.display = "none";
+                element.removeEventListener("input", validateInput);
+            }
+        });
+    });
+}
+function isValidInput(el) {
+    if (el === Fullname) {
+        console.log(el)
+        return Fullname.value.trim().split(/\s+/).length === 5;
+    }
+    else if (el === dob) {
+        let datenow = new Date();
+        let datec = Number.parseInt((datenow - new Date(dob.value)) / 1000 / 60 / 60 / 24 / 365);
+        return new Date(dob.value) <= datenow && datec >= 21 && datec <= 100;
+    }
+    else if (el === nationalId) {
+        return nationalId.value.trim().length === 14;
+    }
+    else if (el === phoneNumber) {
+        return phoneNumber.value.trim().length === 11;
+    }
+    else if (el === password || el === confirmPassword) {
+        return password.value === confirmPassword.value;
+    }
+    return true;
 }
 form.onsubmit = async function(e) {
     e.preventDefault();
-    if (Fullname.value.trim().split(/\s+/).length != 5) {
-        signUpAlert("Full name must be 5 words.",Fullname.parentElement);
+    if (!isValidInput(Fullname)) {
+        signUpAlert("الأسم يجب ان يكون خماسي",Fullname.parentElement,[Fullname]);
         return;
     }
-    let datenow = new Date();
-    if (new Date(dob.value) > datenow) {
-        signUpAlert("Invalid date of birth.",dob.parentElement);
+    else if (!isValidInput(dob)) {
+        signUpAlert("العمر يجب ان يكون على الأقل 21 و على الأكثر 100",dob.parentElement,[dob]);
         return;
     }
-    let datec = Number.parseInt((datenow - new Date(dob.value)) / 1000 / 60 / 60 / 24 / 365);
-    if (datec < 21 ) {
-        signUpAlert("Age must be at least 21",dob.parentElement);
+    if (!isValidInput(nationalId)) {
+        signUpAlert("الرقم القومي يجب ان يتكون من 14 رقم",nationalId.parentElement,[nationalId]);
         return;
     }
-    if (nationalId.value.length != 14) {
-        signUpAlert("National ID must be 14 digits.",nationalId.parentElement);
+    if (!isValidInput(phoneNumber)) {
+        signUpAlert("رقم الهاتف يجب ان يتكون من 11 رقم",phoneNumber.parentElement,[phoneNumber]);
         return;
     }
-    if (phoneNumber.value.length != 11) {
-        signUpAlert("Phone number must be 11 digits.",phoneNumber.parentElement);
+    if (!isValidInput(password)) {
+        signUpAlert("كلمات المرور غير متطابقه",password.parentElement,[password,confirmPassword]);
         return;
     }
-    if (password.value !== confirmPassword.value) {
-        signUpAlert("Passwords do not match.",password.parentElement);
-        return;
-    }
+
 
     let user = {
         fullname: Fullname.value,
         birthDate: dob.value,
-        nationalId: nationalId.value,
-        address: address.value,
-        phoneNumber: phoneNumber.value,
-        email: email.value,
-        password: password.value
+        nationalId: nationalId.value.trim(),
+        address: address.value.trim(),
+        phoneNumber: phoneNumber.value.trim(),
+        email: email.value.trim(),
+        password: password.value.trim()
     };
 
-    let response = await fetch("/user/register", {
+    let response = await fetch("user/register", {
         method: "POST",
         body: JSON.stringify(user),
         headers: {
-            "Content-type": "application/json; charset=UTF-8"
+            "Content-type": "application/json"
         }
     });
-
+    console.log(response)
     let data = await response.json();
+    
     if (response.ok) {
         window.localStorage.setItem("IdHash", data._id);
-        window.location.href = "/account.html";
+        window.location.href = "/account.php";
     } else {
-        alert(data.message || "Registration failed.");
+        alert = document.querySelector("form > #signup-alert");
+        alert.innerHTML = data.message || "Registration failed.";
+        alert.style.display = "block"
+        alert.classList.add("alert","alert-danger","text-center","mt-3")
     }
 }

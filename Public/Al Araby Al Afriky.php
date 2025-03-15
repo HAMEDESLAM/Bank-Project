@@ -11,65 +11,7 @@
   </head>
   <body>
     <!-- Navbar start-->
-    <nav class="navbar navbar-expand-lg position-relative">
-      <div class="container-fluid px-1 px-lg-5 d-flex justify-content-between flex-column flex-md-row">
-        <div class="d-flex align-items-center">
-          <i class="fa-solid fa-building-columns icon"></i>
-          <a class="navbar-brand" href="index.html">استشارات لخدمات بنكيه</a>
-        </div>
-        <ul class="navbar-nav align-items-center flex-row pt-1 pt-lg-0 pe-0">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">الرئيسية</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="الودائع.html">الودائع</a>
-          </li>
-          <li class="nav-item" id="Auth">
-            <a class="nav-link" href="account.html">حسابي</a>
-          </li>
-          <li class="nav-item position-relative">
-            <button class="btn btn-outline-primary button">التواصل معنا</button>
-          </li>
-          <div
-            class="floating-navbar position-absolute bg-light d-flex justify-content-between align-items-center p-3 p-md-4"
-          >
-            <ul class="col-12 col-md-5 d-flex flex-column h-100">
-              <li class="mb-4">
-                <i class="fa-solid fa-phone ms-2"></i>
-                <a href="tel:+20 01100000000" class="text-decoration-none"
-                  >+20 01100000000</a
-                >
-              </li>
-              <li class="mb-4">
-                <i class="fa-solid fa-phone ms-2"></i>
-                <a href="tel:+20 01200000000" class="text-decoration-none"
-                  >+20 01200000000</a
-                >
-              </li>
-              <li class="mb-4">
-                <i class="fa-brands fa-whatsapp ms-2"></i>
-                <a href="tel:+20 01234435345" class="text-decoration-none"
-                  >+20 01234435345</a
-                >
-              </li>
-              <li class="mb-4">
-                <i class="fa-solid fa-envelope ms-2"></i>
-                <a href="mailto:Hi@gmail.com" class="text-decoration-none"
-                  >Hi@gmail.com</a
-                >
-              </li>
-              <li >
-                <i class="fa-solid fa-location-dot ms-2"></i>
-                <a href="" class="text-decoration-none">المنطقة الشرقية</a>
-              </li>
-            </ul>
-            <div class="col-3 d-none d-md-block">
-              <img class="w-100" src="Media/Logo.png" alt="Banking Image" />
-            </div>
-          </div>
-        </ul>
-      </div>
-    </nav>
+    <?php include '../Templates/Navbar.php'; ?>
     <!-- Navbar ends-->
 
     <!--main-->
@@ -78,7 +20,7 @@
         <!--شعار-->
         <div class="row d-flex align-items-center">
           <div class="col-2">
-            <img src="Media/Al Araby Al Afriky.png" alt="" class="w-100" />
+            <img src="Media/Al Araby Al Afriky.png" alt="" class="w-100 rounded-5" />
           </div>
           <h2 class="col-9 fs-1 fw-bold">بنك العربي الأفريقي</h2>
         </div>
@@ -151,38 +93,38 @@
         <div class="row pt-5 px-5">
           <h2>الأنشطة</h2>
           <p class="mt-4 px-5" style="color: rgb(74, 70, 70)">
-                <h4 class="mt-3">تمويل المطورين</h4>
+                <h4 class="mt-1">تمويل المطورين</h4>
                     هو أحد المنتجات المميزة للبنك العربي الأفريقي الدولي والمصممة خصيصا للمطورين العقاريين لسد أي فجوات تمويلية بين التدفقات المقبوضة والمدفوعة خلال فترة بناء مشروع عقاري سكني.
 
                     يتمثل تمويل المطورين في تمويل يقدم للمطورين العقاريين تمويل بناء مشروع معين، ويعمل هذا التمويل بشكل أساسي على عزل التدفقات النقدية للمشروع عن التدفقات النقدية الأخرى للشركة.
 
                     يساعدكم تمويل المطورين على الوصول للهيكل التمويلي الأمثل وتحسين إستغلال مساهمة رأس المال في مشروع تطوير عقاري سكني واحد، مما يترك مجالًا للاستفادة من مساهماتكم في رأس المال في المزيد من المشاريع وتوسيع انتشاركم الجغرافي <br><br>
 
-                <h4 class="mt-3"> تمويل المقاولين</h4>
+                <h4 class="mt-5"> تمويل المقاولين</h4>
                     نعمل على تصميم هذا المنتج لدعم المقاولين في مختلف القطاعات لإصدار أنواع مختلفة من الضمانات بالإضافة إلى الاستفادة من التمويل المباشر لتغطية أي عجز في التدفقات النقدية الخاصة بالعقود.
 
                     يساعد تمويل المقاولين على تلبية الاحتياجات التمويلية للمقاولين خلال المراحل المختلفة للمشروع، بدءًا من خطابات الضمان الابتدائية أثناء عملية تقديم العطاءات، و خطابات ضمان الدفعة المقدمة الصادرة لضمان استلام الدفعة المقدمة للمشروع من جهة الإسناد، وخطابات الضمان النهائية المطلوبة ضمانًا لأداء المقاول حتى تسليم المشروع.
 
                     على جانب التمويل المباشر، يعمل تمويل المقاولين على مساعدة المقاولين على سد فجوات التدفق النقدي بين التدفقات النقدية المدفوعة التي تكون مطلوبة لإنشاء المشروع أو توريده والتدفقات النقدية المقبوضة من تحصيل المستخلصات.<br><br>
 
-                <h4 class="mt-3">التمويل المهيكل</h4>
+                <h4 class="mt-5">التمويل المهيكل</h4>
                     يقدم فريق بنوك الإستثمار والتمويل المهيكل (IBSF) حلولاً متعددة التخصصات لتمويل الأصول ذات الطبيعة المتعددة مع ميزات فريدة من نوعها تغطي تمويل المشروعات، وتسهيلات الخصم، وتفريغ الأصول المجمعة من بين المنتجات المهيكلة الأخرى. نحن نعمل مع العملاء على تحقيق الدخل من الأصول والتدفقات النقدية من خلال هياكل التمويل مع توافر أو عدم توافر حق الرجوع والتي تظهر بشكل كبير في متطلبات تمويل المطورين العقاريين ومشاريع البنية التحتية ومشاريع الشراكة بين القطاعين العام والخاص. نحن نعمل على تصميم الحلول التمويلية التي تتماشى مع إحتياجات عملائنا وذلك لتحقيق أحسن إستفادة من القروض الممنوحة لهم.
                     <br><br>
-                <h4 class="mt-3">تمويل المشروعات</h4>
+                <h4 class="mt-5">تمويل المشروعات</h4>
                     يمكن لمتخصينا من ذوي الخبرة تقديم حلول تمويلية لدعم احتياجات تمويل المشروعات في مراحل مختلفة (المشروعات الجديدة/ توسعات المشروعات القائمة). نقوم بتصميم مقترحات التمويل لتلبية الاحتياجات المحددة لعملائنا بناءً على تحليل التدفقات النقدية المستقبلية للمشروع.
 
                     منتج تمويل المشروعات هو منتج خاص يتم تصميمه/هيكلته على أساس كل حالة على حدى، حيث تحدد التدفقات النقدية المستقبلية للمشروع جميع شروط التمويل (مدة القرض، وفترة السماح، وجدول السداد، وما إلى ذلك).
 
                     باستخدام هذا النوع من التمويل، يمكن للبنك العربي الأفريقي الدولي مساعدتك في تمويل المشروعات الكبيرة، بما في ذلك، على سبيل المثال لا الحصر، مشاريع البنية التحتية والمشاريع الصناعية، ويكون ذلك في إطار مزيج تمويلي متفق عليه مسبقًا ما بين الدين وحقوق الملكية، ويساعد ذلك في تقليل الاستثمار الأولي، نظرًا لأن الجزء الممول بالدين من المشروع عادة ما يكون جزءًا كبيرًا.
                     <br><br>
-                <h4 class="mt-3">القروض المشتركة</h4>
+                <h4 class="mt-5">القروض المشتركة</h4>
                     قد تتطلب القروض الأكبر حجمًا التعاون مع بنوك أخرى من أجل تنويع المخاطر وإدارة توظيفات البنك لدى العميل الواحد وأطرافه المرتبطة.
 
                     يمكن للبنك العربي الأفريقي الدولي أن يقوم بدور المرتب الرئيسي الأولي (MLA) بالنيابة عنكم في ترتيب القروض المشتركة، حيث يتضمن نطاق مهام البنك الجمع بين مجموعة من المقرضين المطلوبين لضمان تغطية القرض المطلوب بالكامل، والتفاوض على شروط التسهيل المقترح، بالإضافة إلى القيام بأدوار أخرى (مثل وكيل القرض، ووكيل الضمان، وبنك الحساب، وما إلى ذلك).
 
                     ومن خلال الاستفادة من قوة مركزه المالي، يمكن أن يكون البنك العربي الأفريقي الدولي أيضًا أحد ضامني تغطية القرض.
                     <br><br>
-                <h4 class="mt-3">
+                <h4 class="mt-5">
                     ترتيب وضمان تغطية سندات الشركات وسندات التوريق
                 </h4>
                     يعد البنك العربي الأفريقي الدولي أحد المؤسسات الرائدة عندما يتعلق الأمر بترتيب وضمان تغطية سندات الشركات وسندات التوريق، والتي تعد في الأساس حلول تمويل بديلة تشرك أسواق أدوات الدين في عملية جمع الأموال.
@@ -199,79 +141,7 @@
     <!--main ends-->
     
     <!-- footer -->
-    <footer>
-      <div class="container py-5">
-        <div class="row justify-content-between d-flex">
-          <div
-            class="col-12 col-lg-8 d-flex flex-column flex-sm-row justify-content-between flex-wrap"
-          >
-            <h3 class="col-12 mb-4 me-3 me-sm-0">البنوك</h3>
-            <ul class="col-10 col-sm-5 p-0 mb-0 me-5">
-              <li class="mb-4">
-                <i class="fa-solid fa-building-columns ms-2"></i>
-                <a
-                  href="bank al Ahly.html"
-                  class="text-decoration-none text-white"
-                  >البنك الأهلي المصري</a
-                >
-              </li>
-              <li class="mb-4">
-                <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="Misr Bank.html" class="text-decoration-none text-white"
-                  >بنك مصر</a
-                >
-              </li>
-
-              <li class="mb-4">
-                <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="Al Araby Al Afriky.Html" class="text-decoration-none text-white"
-                  >بنك العربي الأفريقي</a
-                >
-              </li>
-              <li class="mb-4">
-                <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="Saudi Bank.html" class="text-decoration-none text-white"
-                  >بنك السعودي المصري
-                </a>
-              </li>
-            </ul>
-            <ul class="col-10 col-sm-5 p-0 mb-0 me-5">
-              <li class="mb-4">
-                <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="CIB Bank.html" class="text-decoration-none text-white">
-                  بنك سي اي بي</a
-                >
-              </li>
-              <li class="mb-4">
-                <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="HICB BANK.html" class="text-decoration-none text-white">
-                  بنك ايش اي اس</a
-                >
-              </li>
-              <li class="mb-4">
-                <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="QNB.html" class="text-decoration-none text-white">
-                  بنك قطر الوطني</a
-                >
-              </li>
-              <li class="mb-4">
-                <i class="fa-solid fa-building-columns ms-2"></i>
-                <a href="Cairo Bank.html" class="text-decoration-none text-white">
-                  بنك القاهره</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="d-none d-lg-block col-md-4">
-            <img class="w-100" src="Media/Logo.png" alt="Banking Image" />
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="d-flex justify-content-center align-items-center pb-3">
-        <span class="mx-auto">&copy; 2025 حقوق النشر و الطبع محفوظه</span>
-      </div>
-    </footer>
+    <?php include "../Templates/Footer.php"?>
     <!--footer end-->
 
     <!--Scripts-->

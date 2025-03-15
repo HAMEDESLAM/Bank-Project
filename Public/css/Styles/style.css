@@ -4,6 +4,24 @@
     background-image: url(../../Media/Landing.jpg);
     height: calc(100vh - 66px);
 }
+.landing h1{
+    font-size: 50px !important;
+    @media (max-width:776px) {
+        font-size: 40px !important;
+    }
+}
+.landing p{
+    font-size: 20px !important;
+    @media (max-width:776px) {
+        font-size: 18px !important;
+    }
+}
+.landing .btn{
+    font-size: 20px !important;
+    @media (max-width:776px) {
+        font-size: 18px !important;
+    }
+}
 .landing *{
     z-index: 10;
 }
@@ -26,13 +44,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 .carousel {
     width: 90%;
-    height: 800px;
+    height: 80vh;
     border-radius: 15px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    @media (max-width:776px) {
+        height: 40vh;
+    }
 }
 .carousel img{
     height: 100%;
@@ -65,7 +85,35 @@
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     z-index: 0;
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
 
+    @media (max-width:996px) {
+        width: 45%;
+        padding-top: 70px;
+        padding-right: 70px;
+        h2{
+            font-size: 25px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    @media (max-width:776px) {
+        width: 100%;
+        padding-top: 20px;
+        padding-right: 20px;
+        h2{
+            font-size: 23px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
 }
 /* carsoul end */
 
@@ -78,12 +126,14 @@
 .invoice-section {
     background-color: #000;
     color: white;
-    padding: 50px 0;
+
     text-align: center;
 }
 #posts-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px;
-    grid-gap: 40px;
+    grid-gap: 30px;
+    @media (max-width:1176px) {
+        grid-template-columns: 1fr ;
+    }
 }
